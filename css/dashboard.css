@@ -1,50 +1,47 @@
-/*
- * Base structure
- */
+/* PRINCIPAL ----------------------------------------------------------------------------------- */
 
-/* Move down content because we have a fixed navbar that is 50px tall */
+/* Mueve el contenido principal debido a la barra de navegación superior */
+
 body {
 	padding-top: 50px;
 }
 
-
-/*
- * Global add-ons
- */
+/* ADICIONALES --------------------------------------------------------------------------------- */
 
 .sub-header {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 }
 
+/* BARRA LATERAL ------------------------------------------------------------------------------- */
 
-/*
- * Sidebar
- */
+/* Esconde la barra lateral en una resolución menor a 768px */
 
-/* Hide for mobile, show later */
 .sidebar {
-	position: fixed;
-	top: 51px;
-	bottom: 0;
-	left: 0;
-	z-index: 1000;
-	padding: 20px;
-	overflow-x: hidden;
-	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-	background-color: #f5f5f5;
-	border-right: 1px solid #eee;
-  	display: block;
+	display: none;
 }
 @media (min-width: 768px) {
 	.sidebar {
+		position: fixed;
+		top: 51px;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
 		display: block;
+		padding: 20px;
+		overflow-x: hidden;
+		/* Scroll automático dependiendo del tamaño del viewport */
+		overflow-y: auto;
+		background-color: #f5f5f5;
+		border-right: 1px solid #eee;
 	}
 }
 
-/* Sidebar navigation */
+/* Barra de navegación */
+
 .nav-sidebar {
-	margin-right: -21px; /* 20px padding + 1px border */
+	/* 20px por padding + 1px por border */
+	margin-right: -21px;
 	margin-bottom: 20px;
 	margin-left: -20px;
 }
@@ -56,11 +53,11 @@ body {
 	color: #fff;
 	background-color: #428bca;
 }
+.nav-sidebar > .active > a:hover {
+	color: #000;
+}
 
-
-/*
- * Main content
- */
+/* CONTENIDO ----------------------------------------------------------------------------------- */
 
 .main {
 	padding: 20px;
@@ -75,10 +72,7 @@ body {
 	margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
+/* PLACEHOLDERS -------------------------------------------------------------------------------- */
 
 .placeholders {
 	margin-bottom: 30px;
