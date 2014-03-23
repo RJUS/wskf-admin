@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
     <head>
     
     <meta charset="utf-8">
@@ -13,6 +14,8 @@
     <link href="bs/css/bootstrap.min.css" rel="stylesheet">
     <!-- Dashboard CSS -->
     <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     
     <!-- Solo para realizar debug | útil en desarrollo -->
     
