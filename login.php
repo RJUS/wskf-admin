@@ -5,15 +5,15 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="WSKF Venezuela">
     
     <title>WSKF - Administrador</title>
     
     <!-- Bootstrap -->
     <link href="bs/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Dashboard CSS -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Login CSS -->
+    <link href="css/login.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     
@@ -33,36 +33,32 @@
 
     <body>
     
-        <div class="container-fluid">
+        <div class="container">
         
-            <div class="row">
-            
-                <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 main">              	
+        	<div class="inicio-sesion">        	
                 
-                    <h1 style="text-align: center">
-                    	<img id="login-logo" src="img/wskf-logo.png" width="150">
-                    </h1>
-                    
-                    <form role="form" id="inicio-sesion">
-                        <div class="form-group">
-                            <label for="usuario">Usuario</label>
-                            <input type="text" class="form-control" id="usuario">
-                        </div>
-                        <div class="form-group">
-                            <label for="clave">Contraseña</label>
-                            <input type="password" class="form-control" id="clave">
-                        </div>
-                        <div class="form-group">
-                        	<p class="help-block"><a href="#">¿Olvidó su contraseña?</a></p>
-                        </div>
-                        <button type="submit" class="btn btn-default">Iniciar sesión</button>
-                    </form>
+                <h1 style="text-align: center">
+                    <img id="login-logo" src="img/wskf-logo.png" width="150">
+                </h1>
                 
-                </div> <!-- fin | class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 main" -->
+                <form role="form">
+                    <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="form-control" id="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="clave">Contraseña</label>
+                        <input type="password" class="form-control" id="clave">
+                    </div>
+                    <div class="form-group">
+                        <p class="help-block"><a href="#">¿Olvidó su contraseña?</a></p>
+                    </div>
+                    <button type="submit" class="btn btn-default">Iniciar sesión</button>
+                </form>
             
-            </div> <!-- fin | class="row" -->
+            </div>
             
-        </div> <!-- fin | class="container-fluid" -->
+        </div> <!-- fin | class="container" -->
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
@@ -71,4 +67,5 @@
         <script src="bs/assets/js/docs.min.js"></script>
 
 	</body>
+    
 </html>
